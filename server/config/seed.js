@@ -7,6 +7,7 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var Whatsit = require('../api/whatsit/whatsit.model');
 
 Thing.find({}).remove(function() {
   Thing.create({
@@ -44,6 +45,21 @@ User.find({}).remove(function() {
     password: 'admin'
   }, function() {
       console.log('finished populating users');
+    }
+  );
+});
+
+Whatsit.find({}).remove(function() {
+  Whatsit.create({
+    name: 'Bugatti Veyron',
+    classType: 'S',
+    wheels: 4
+  }, {
+    name: 'Ferrari F40',
+    classType: 'S',
+    wheels: 4
+  }, function() {
+      console.log('finished populating cars');
     }
   );
 });

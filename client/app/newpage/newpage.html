@@ -1,0 +1,23 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Welcome to newpage! <small>{{message}}</small></h1>
+        </div>
+        
+        <div class="col-md-12">
+            <h1 class="page-header">Awesome Cars and Other Vehicles:</h1>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="car in awesomeCars">
+                    <a ng-click="deleteCar(car)" class="trash">
+                        <strong>{{car.name}}</strong><br>
+                        <span class="text-muted">{{car.classType}}</span>
+                        <span class="text-muted">{{car.wheels}}</span>
+                        <span class="glyphicon glyphicon-trash pull-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

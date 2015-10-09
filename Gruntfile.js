@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// Generated on 2015-10-08 using generator-angular-fullstack 2.1.1
-=======
-// Generated on 2015-10-07 using generator-angular-fullstack 2.1.1
->>>>>>> 417faf7224b3f29ff87b9997189c2680408620eb
 'use strict';
 
 module.exports = function (grunt) {
